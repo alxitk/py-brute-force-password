@@ -27,7 +27,7 @@ def get_range(start: int, end: int) -> None:
         hash_val = sha256_hash_str(password)
 
         if hash_val in PASSWORDS_TO_BRUTE_FORCE:
-            print(f"Found password for {hash_val}")
+            print(f"Found password: {password} for hash: {hash_val}")
 
 
 def brute_force_password() -> None:
